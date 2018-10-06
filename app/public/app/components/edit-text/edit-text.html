@@ -1,0 +1,8 @@
+<span ng-hide="$ctrl.editing" id="edit-text-span" ng-click="$ctrl.edit()" class="edit-span-uneditable">
+	{{$ctrl.text}}
+</span>
+<textarea ng-show="$ctrl.editing" id="edit-text-edit" ng-model="$ctrl.tempText" rows="{{$ctrl.rows}}"
+          cols="{{$ctrl.cols}}" maxlength="{{$ctrl.cols * $ctrl.rows}}"
+          fus-enter-press="$ctrl.save()"
+          fus-escape-press="$ctrl.cancel()">
+</textarea>

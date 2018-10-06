@@ -1,0 +1,68 @@
+<div>
+    <form>
+        <div>
+            <label for='name'>Name</label>
+            <input id='name' type='text' ng-model='card.name'>
+        </div>
+
+        <div>
+            <label for='text'>Text</label>
+            <textarea id='text' ng-model='card.text' rows="6" cols="80"></textarea>
+        </div>
+
+        <div>
+            <label for='cost'>Cost</label>
+            <input id='cost' type='text' ng-model='card.cost' style='width:15px'>
+        </div>
+
+        <div>
+            <label for='type'>Type</label>
+            <select id='type' ng-model='card.type' ng-options='type as type for type in types' ng-change="formatCard()"></select>
+        </div>
+
+        <div>
+            <label for='element'>Element</label>
+            <select id='element' ng-model='form.element'
+                    ng-options='element as element for element in elements'></select>
+        </div>
+
+        <div>
+            <label for='tech'>Tech</label>
+            <input id='tech' type='text' ng-model='form.tech' style='width:15px'>
+        </div>
+
+        <!--<div>-->
+            <!--<label for='rarity'>Rarity</label>-->
+            <!--<select id='rarity' ng-model='card.rarity' ng-options='rarity as rarity for rarity in rarities'></select>-->
+        <!--</div>-->
+
+        <!--<div>-->
+            <!--<label for='set'>Set</label>-->
+            <!--<select id='set' ng-model='card.set' ng-options='set as set for set in sets'></select>-->
+        <!--</div>-->
+
+        <!--<div>-->
+            <!--<label for='strength'>Strength</label>-->
+            <!--<select id='strength' ng-model='card.strength'-->
+                    <!--ng-options='strength as strength for strength in strengths'></select>-->
+        <!--</div>-->
+
+        <div ng-if='card.type === "entity"'>
+            <div>
+                <label for='damage'>Damage</label>
+                <input id='damage' type='text' ng-model='card.damage' style='width:15px'>
+            </div>
+
+            <div>
+                <label for='health'>Health</label>
+                <input id='health' type='text' ng-model='card.health' style='width:15px'>
+            </div>
+        </div>
+
+    </form>
+
+    <div>
+        <button type='button' ng-click='postCard()'>Create card</button>
+        <span ng-if="notes">{{notes}}</span>
+    </div>
+</div>

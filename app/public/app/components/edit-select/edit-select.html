@@ -1,0 +1,12 @@
+<span ng-switch="$ctrl.editing">
+	<span ng-switch-when="true" id="edit-select-select">
+		<select ng-model="$ctrl.tempSelected" ng-options="option for option in $ctrl.options"
+            ng-click="$ctrl.selectClicked()"
+            fus-enter-press="$ctrl.save()"
+            fus-escape-press="$ctrl.cancel()">
+		</select>
+	</span>
+  <span ng-switch-default id="edit-select-span" ng-click="$ctrl.edit()">
+		{{$ctrl.selected}}
+	</span>
+</span>

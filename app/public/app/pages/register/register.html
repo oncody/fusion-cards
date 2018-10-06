@@ -1,0 +1,27 @@
+<div style="display: flex; align-items: center; flex-direction: column">
+    <div style="">
+        <div>
+            <label for='username'>Username</label>
+            <input id='username' type='text' ng-model='form.username'>
+        </div>
+
+        <div>
+            <label for='email'>Email</label>
+            <input id='email' type='text' ng-model='form.email'>
+        </div>
+
+        <div style="padding-top: 20px;">
+            <label for='password'>Password</label>
+            <input id='password' type="password" ng-model='form.password'>
+        </div>
+
+        <div style="padding-top: 20px;">
+            <label for='confirm'>Confirm Password</label>
+            <input id='confirm' type="password" ng-model='form.confirm'>
+        </div>
+
+        <div style="padding-top: 20px; color:red;" ng-if="error">{{error}}</div>
+
+        <button type="button" ng-click="register()" style="margin-top: 20px;">Register</button>
+    </div>
+</div>

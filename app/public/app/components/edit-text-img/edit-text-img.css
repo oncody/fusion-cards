@@ -1,0 +1,11 @@
+.edit-span-uneditable{
+	cursor: pointer;
+}
+
+.edit-span-editable{
+	color: Black;
+}
+
+.edit-span-editable input{
+	
+}

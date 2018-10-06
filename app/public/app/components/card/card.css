@@ -1,0 +1,89 @@
+.element-earth {
+    background-color: Green;
+    color: white;
+    border-color: white;
+}
+
+.element-fire {
+    background-color: Red;
+    color: white;
+    border-color: white;
+}
+
+.element-wind {
+    background-color: aqua;
+    color: black;
+    border-color: black;
+}
+
+.element-water {
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+
+.element-light {
+    background-color: gold;
+    color: black;
+    border-color: black;
+}
+
+.element-dark {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.element-rogue {
+    background-color: purple;
+    color: white;
+    border-color: white;
+}
+
+.element-warrior {
+    background-color: pink;
+    color: white;
+    border-color: white;
+}
+
+.element-wizard {
+    background-color: lightgreen;
+    color: white;
+    border-color: white;
+}
+
+.element-marauder {
+    background-color: maroon;
+    color: white;
+    border-color: white;
+}
+
+.element-titan {
+    background-color: darkolivegreen;
+    color: white;
+    border-color: white;
+}
+
+.element-cleric {
+    background-color: darkgoldenrod;
+    color: white;
+    border-color: white;
+}
+
+.element-psion {
+    background-color: purple;
+    color: white;
+    border-color: white;
+}
+
+.element-necromancer {
+    background-color: saddlebrown;
+    color: white;
+    border-color: white;
+}
+
+.element-raider {
+    background-color: orangered;
+    color: white;
+    border-color: white;
+}
