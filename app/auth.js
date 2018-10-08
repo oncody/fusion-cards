@@ -3,7 +3,7 @@
 const jwt = require('jsonwebtoken');
 const logger = require('./logger').Logger;
 
-module.exports.secret = ;//todo;
+module.exports.secret = process.env.JWT_PRIVATE_KEY;
 
 module.exports.verify = function (request, response, callback) {
     let options = {};

@@ -6,10 +6,8 @@ const fusionVariables = require('./../fusion-variables');
 const logger = require('./../logger').Logger;
 const ObjectId = require('mongodb').ObjectID;
 
-const databaseHost = ; //todo;
-const databasePort = ; //todo;
-const databaseName = ; //todo;
-const databaseUrl = ; //todo;
+const databaseUrl = process.env.DATABASE_URL;
+const databaseName = process.env.DATABASE_NAME;
 
 
 module.exports.openDatabaseConnection = function(callback){

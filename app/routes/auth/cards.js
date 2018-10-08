@@ -26,6 +26,6 @@ module.exports = function (app) {
 
     app.delete(`${cardsApiRoute}/:cardId`, function (request, response) {
         fusionDataAccess.deleteCardById(request.params.cardId);
-        response.status(200).send('Card updated');
+        response.status(200).send('Card deleted');
     });
 };
