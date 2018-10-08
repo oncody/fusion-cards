@@ -2,7 +2,7 @@
 
 const winston = require('winston');
 
-module.exports.Logger = new winston.Logger({
+module.exports.Logger = winston.createLogger({
     transports: [
         new (winston.transports.Console)({
             colorize: true,

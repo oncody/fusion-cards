@@ -7,17 +7,17 @@
   },
   "dependencies": {
     "bcrypt": "1.0.3",
-    "body-parser": "latest",
+    "body-parser": "1.18.3",
     "cookie-parser": "1.4.3",
     "cross-env": "5.2.0",
-    "express": "4.16.2",
-    "express-jwt": "5.3.0",
-    "jsonwebtoken": "8.1.0",
-    "lodash": "4.17.4",
-    "moment": "2.20.1",
-    "mongodb": "3.0.1",
-    "morgan": "1.9.0",
-    "serve-favicon": "2.4.5",
-    "winston": "2.4.0"
+    "express": "4.16.3",
+    "express-jwt": "5.3.1",
+    "jsonwebtoken": "8.3.0",
+    "lodash": "4.17.11",
+    "moment": "2.22.2",
+    "mongodb": "3.1.6",
+    "morgan": "1.9.1",
+    "serve-favicon": "2.5.0",
+    "winston": "3.1.0"
   }
 }
