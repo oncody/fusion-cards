@@ -6,7 +6,7 @@
     "start": "cross-env JWT_PRIVATE_KEY=\"\" DATABASE_URL=\"\" DATABASE_NAME=\"\" node ./bin/www"
   },
   "dependencies": {
-    "bcrypt": "3.0.2",
+    "bcryptjs": "2.4.3",
     "body-parser": "1.18.3",
     "cookie-parser": "1.4.3",
     "cross-env": "5.2.0",

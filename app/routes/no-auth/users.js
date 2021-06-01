@@ -1,6 +1,6 @@
 'use strict';
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const fusionVariables = require('../../fusion-variables');
 const fusionDataAccess = require('../../data/fusion-data-access');
 const fusionLogger = require('../../logger');
